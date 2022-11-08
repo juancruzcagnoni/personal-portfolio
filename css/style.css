@@ -8,11 +8,18 @@
 }
 
 h2 {
-  line-height: 92.5%;
-  letter-spacing: -3.5%;
-  font-weight: 700;
+  font-variation-settings: 'wght' 900;
+  line-height: 1.1em;
+  letter-spacing: -0.045em;
   color: #000;
-  font-size: 36px;
+}
+
+h3 {
+  color: #7e2713;
+  font-variation-settings: 'wght' 600;
+  line-height: 1.1em;
+  letter-spacing: -0.045em;
+  font-size: 1.1rem;
 }
 
 p {
@@ -58,6 +65,7 @@ p {
 
 .home {
   margin-top: 110px;
+  padding-bottom: 50px;
 }
 
 h1 {
@@ -81,7 +89,7 @@ h1 {
   padding: 0.5rem 1rem;
 }
 
-.cv {
+.cv, .card-links a {
   color: #000;
   text-decoration: none;
   border-bottom: 2.5px solid #7e2713;
@@ -90,7 +98,7 @@ h1 {
   font-size: 0.9rem;
 }
 
-.cv:hover {
+.cv:hover, .card-links a:hover {
   color: #ffff;
   background-color: #7e2713;
   -webkit-transition: 0.2s ease-out;
@@ -113,6 +121,46 @@ h1 {
   overflow: hidden;
 }
 
+.about {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.container-2 {
+  margin-top: 4rem;
+}
+
+.projects {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.projects-cards {
+  text-align: left;
+}
+
+.card {
+  border: none;
+}
+
+.card img {
+  border-radius: 5px;
+}
+
+.card-links a {
+  margin-right: 1rem;
+}
+
+.contact {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.footer {
+  padding: 50px 0;
+  text-align: center;
+}
+
 @media (min-width: 768px) {
   .home-info {
     text-align: left;
@@ -125,6 +173,10 @@ h1 {
   }
   .links a {
     padding-left: 0;
+  }
+  .container-2 {
+    width: 60%;
+    margin: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */

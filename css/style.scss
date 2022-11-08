@@ -17,11 +17,18 @@ $color-4: #ffff;
 
 // General
 h2{
-    line-height: 92.5%;
-    letter-spacing: -3.5%;
-    font-weight: 700;
+    font-variation-settings: 'wght' 900;
+    line-height: 1.1em;
+    letter-spacing: -0.045em;
     color: $color-1;
-    font-size: 36px;
+}
+
+h3{
+    color: $color-3;
+    font-variation-settings: 'wght' 600;
+    line-height: 1.1em;
+    letter-spacing: -0.045em;
+    font-size: 1.1rem;
 }
 
 p{
@@ -64,6 +71,7 @@ p{
 // Home
 .home{
     margin-top: 110px;
+    padding-bottom: 50px;
 }
 
 h1{
@@ -113,13 +121,54 @@ h1{
 }
 
 // About
+.about{
+    text-align: center;
+    padding: 50px 0;
+}
+
+.container-2{
+    margin-top: 4rem;
+}
 
 // Projects
+.projects{
+    text-align: center;
+    padding: 50px 0;
+}
+
+.projects-cards{
+    text-align: left;
+}
+
+.card{
+    border: none;
+
+    img{
+        border-radius: 5px; 
+    }
+}
+
+.card-links{
+    a{
+        @extend .cv;
+        margin-right: 1rem;
+    }
+}
 
 // Contact 
+.contact{
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer{
+    padding: 50px 0;
+    text-align: center;
+}
 
 // MediaQueries 
 @media (min-width: 768px) {
+    // Home 
     .home-info{
         text-align: left;
     }
@@ -134,5 +183,11 @@ h1{
         a{
             padding-left: 0;
         }
+    }
+
+    // About 
+    .container-2{
+        width: 60%;
+        margin: auto;
     }
 }
