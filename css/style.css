@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+h2 {
+  line-height: 92.5%;
+  letter-spacing: -3.5%;
+  font-weight: 700;
+  color: #000;
+  font-size: 36px;
+}
+
+p {
+  font-size: 0.9rem;
+  line-height: 1rem;
+  color: #252525;
+}
+
+.navbar {
+  z-index: 1;
+  background-color: #ffff;
+  font-variation-settings: 'wght' 500;
+  font-size: 1rem;
+}
+
+.navbar-brand {
+  font-size: 1rem;
+  font-variation-settings: 'wght' 900;
+  line-height: 0.9em;
+  letter-spacing: -0.045em;
+  color: #7e2713;
+}
+
+.navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.nav-link {
+  padding: 8px 8px 8px 0px;
+  color: #000;
+  font-size: 0.9rem;
+}
+
+.nav-link:hover {
+  color: #000;
+}
+
+.home {
+  margin-top: 110px;
+}
+
+h1 {
+  font-variation-settings: 'wght' 900;
+  line-height: 1.1em;
+  letter-spacing: -0.045em;
+  color: #000;
+}
+
+.home-info {
+  text-align: center;
+}
+
+.links {
+  margin-bottom: 1rem;
+}
+
+.links a {
+  color: #7e2713;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.cv {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 2.5px solid #7e2713;
+  padding: 0.4rem 1rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.cv:hover {
+  color: #ffff;
+  background-color: #7e2713;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+  border-radius: 3px;
+}
+
+.container-image-main {
+  margin-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .home-info {
+    text-align: left;
+  }
+  .container-image-main {
+    margin-top: 0;
+  }
+  .links {
+    margin-bottom: 3rem;
+  }
+  .links a {
+    padding-left: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
