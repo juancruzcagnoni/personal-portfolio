@@ -15,7 +15,7 @@ h2 {
 }
 
 h3 {
-  color: #7e2713;
+  color: #F6AE2D;
   font-variation-settings: 'wght' 600;
   line-height: 1.1em;
   letter-spacing: -0.045em;
@@ -28,55 +28,64 @@ p {
   color: #252525;
 }
 
-.navbar {
-  z-index: 1;
-  background-color: #ffff;
-  font-variation-settings: 'wght' 500;
-  font-size: 1rem;
+.p-info {
+  margin-bottom: 4rem;
 }
 
-.navbar-brand {
-  font-size: 1rem;
-  font-variation-settings: 'wght' 900;
-  line-height: 0.9em;
-  letter-spacing: -0.045em;
-  color: #7e2713;
+.navbar {
+  background-color: #F6AE2D;
+  z-index: 100;
 }
 
 .navbar-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  text-align: center;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url(../img/menu.svg);
+}
+
+.navbar-toggler:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .nav-link {
-  padding: 8px 8px 8px 0px;
-  color: #000;
+  color: #ffff;
   font-size: 0.9rem;
 }
 
 .nav-link:hover {
-  color: #000;
+  color: #ffff;
 }
 
 .home {
-  margin-top: 110px;
-  padding-bottom: 50px;
+  padding-top: 140px;
+  padding-bottom: 60px;
+  background-color: #F6AE2D;
 }
 
 h1 {
   font-variation-settings: 'wght' 900;
   line-height: 1.1em;
   letter-spacing: -0.045em;
-  color: #000;
+  color: #ffff;
+}
+
+h1 span {
+  color: #0E402D;
 }
 
 .home-info {
   text-align: center;
+}
+
+.home-info p {
+  color: #ffff;
 }
 
 .links {
@@ -84,15 +93,15 @@ h1 {
 }
 
 .links a {
-  color: #7e2713;
-  font-size: 1.5rem;
+  color: #0E402D;
+  font-size: 1.7rem;
   padding: 0.5rem 1rem;
 }
 
 .cv, .card-links a {
-  color: #000;
+  color: #0E402D;
   text-decoration: none;
-  border-bottom: 2.5px solid #7e2713;
+  border-bottom: 2.5px solid #0E402D;
   padding: 0.4rem 1rem;
   font-weight: 600;
   font-size: 0.9rem;
@@ -100,7 +109,7 @@ h1 {
 
 .cv:hover, .card-links a:hover {
   color: #ffff;
-  background-color: #7e2713;
+  background-color: #0E402D;
   -webkit-transition: 0.2s ease-out;
   transition: 0.2s ease-out;
   border-radius: 3px;
@@ -123,7 +132,7 @@ h1 {
 
 .about {
   text-align: center;
-  padding: 50px 0;
+  padding: 100px 0;
 }
 
 .container-2 {
@@ -132,7 +141,12 @@ h1 {
 
 .projects {
   text-align: center;
-  padding: 50px 0;
+  padding: 100px 0;
+  background-color: #0E402D;
+}
+
+.projects h2, .projects p {
+  color: #ffff;
 }
 
 .projects-cards {
@@ -141,6 +155,7 @@ h1 {
 
 .card {
   border: none;
+  background-color: transparent;
 }
 
 .card img {
@@ -149,16 +164,86 @@ h1 {
 
 .card-links a {
   margin-right: 1rem;
+  color: #ffff;
+  border-bottom: 2.5px solid #F6AE2D;
+}
+
+.card-links a:hover {
+  color: #0E402D;
+  background-color: #F6AE2D;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+  border-radius: 3px;
 }
 
 .contact {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.form-control {
+  border: none;
+  border-bottom: #F6AE2D solid 2px;
+  border-radius: 0;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #F6AE2D;
+  font-weight: 600;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #F6AE2D;
+  font-weight: 600;
+}
+
+.form-control::-ms-input-placeholder {
+  color: #F6AE2D;
+  font-weight: 600;
+}
+
+.form-control::placeholder {
+  color: #F6AE2D;
+  font-weight: 600;
+}
+
+.form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-bottom: #F6AE2D solid 2px;
+}
+
+#button {
+  background-color: transparent;
+  border: none;
+  color: #0E402D;
+  text-decoration: none;
+  border-bottom: 2.5px solid #0E402D;
+  padding: 0.4rem 1rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+#button:hover {
+  color: #ffff;
+  background-color: #0E402D;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+  border-radius: 3px;
+}
+
+.footer {
+  background-color: #F6AE2D;
   padding: 50px 0;
   text-align: center;
 }
 
-.footer {
-  padding: 50px 0;
-  text-align: center;
+.footer .links {
+  margin-bottom: 2rem;
+}
+
+.footer p {
+  color: #0E402D;
 }
 
 @media (min-width: 768px) {
@@ -169,12 +254,16 @@ h1 {
     margin-top: 0;
   }
   .links {
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
   }
   .links a {
     padding-left: 0;
   }
   .container-2 {
+    width: 60%;
+    margin: auto;
+  }
+  .contact form {
     width: 60%;
     margin: auto;
   }

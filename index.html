@@ -17,27 +17,30 @@
 
 <body>
     <!-- Nav  -->
-    <header>
-        <nav class="navbar position-fixed w-100 top-0">
-            <div class="container d-flex">
-                <a class="navbar-brand mx-0" href="#">Juan Cruz<br>Cagnoni</a>
-                <div>
-                    <ul class="navbar-nav">
-                        <li class="nav-item ms-0"><a class="nav-link" href="#about">About,</a></li>
-                        <li class="nav-item ms-0"><a class="nav-link" href="#projects">Projects,</a></li>
-                        <li class="nav-item ms-0"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
+    <nav class="navbar navbar-expand-md position-fixed w-100 top-0 z-index-100">
+        <div class="container d-flex">
+            <a class="navbar-brand" href="#"><img src="img/logo(wh).svg" alt="Logo Maria Brewing." width="40" class="img-fluid logo-image"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="#">Inicio</a>
+                    <a class="nav-link" href="#nosotros">Nosotros</a>
+                    <a class="nav-link" href="menu.html">Menú</a>
+                    <a class="nav-link" href="#contacto">Contacto</a>
                 </div>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
     <!-- Home  -->
     <section class="home">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-8 home-info">
-                    <h1>Hi, I´m Juan Cruz Cagnoni <br> Frontend Developer</h1>
+                    <h1>Hi, I´m Juan Cruz Cagnoni <br> <span>Frontend Developer</span></h1>
                     <p>I’m from Buenos Aires, Argentina and I work from my studio to the world solving problems.</p>
                     <div class="links">
                         <a href=""><i class="bi bi-linkedin"></i></a>
@@ -58,7 +61,7 @@
     <section class="about">
         <div class="container">
             <h2>Learn more about me and my habilities</h2>
-            <p>I am passionate about everything that has to do with Digital Design and Development. I enjoy working with
+            <p class="p-info">I am passionate about everything that has to do with Digital Design and Development. I enjoy working with
                 enthusiastic people who want to solve problems through beautiful design and experiences.</p>
             <div class="row container-2">
                 <div class="col-12 col-md-6">
@@ -79,7 +82,7 @@
     <section class="projects">
         <div class="container">
             <h2>My latest work</h2>
-            <p>The best way for you to understand my work is to take a look at it, here I leave you the best ones that I
+            <p class="p-info">The best way for you to understand my work is to take a look at it, here I leave you the best ones that I
                 did so that you can analyze them.</p>
             <div class="row container-2 projects-cards">
                 <div class="card col-12 col-md-6 mb-5">
@@ -122,8 +125,7 @@
     <section class="contact">
         <div class="container">
             <h2>Contact me!</h2>
-            <p>Do you have a project in mind? Contact me to help you conclude that idea and solve your problem.</p>
-
+            <p class="p-info">Do you have a project in mind? Contact me to help you conclude that idea and solve your problem.</p>
             <form id="form" class="form">
                 <div class="mb-3">
                     <input type="text" class="form-control" name="name" placeholder="Name" required>
@@ -134,7 +136,7 @@
                 <div class="mb-3">
                     <textarea type="email" class="form-control" name="message" rows="3" placeholder="Send a messagge..." required></textarea>
                 </div>
-                <div class="d-flex justify-content-end"><input class="btn" type="submit" id="button" value="Enviar"></div>
+                <div class="d-flex justify-content-end"><input type="submit" id="button" value="Send"></div>
             </form>
         </div>
     </section>

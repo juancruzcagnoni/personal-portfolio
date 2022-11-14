@@ -4,8 +4,9 @@
 // Variables 
 $color-1: #000;
 $color-2: #252525;
-$color-3: #7e2713;
+$color-3: #0E402D;
 $color-4: #ffff;
+$color-5: #F6AE2D;
 
 // Normalize 
 *{
@@ -24,7 +25,7 @@ h2{
 }
 
 h3{
-    color: $color-3;
+    color: $color-5;
     font-variation-settings: 'wght' 600;
     line-height: 1.1em;
     letter-spacing: -0.045em;
@@ -37,52 +38,66 @@ p{
     color: $color-2;
 }
 
-// Nav 
-.navbar{
-    z-index: 1;
-    background-color: $color-4;
-    font-variation-settings: 'wght' 500;
-    font-size: 1rem;
+.p-info{
+    margin-bottom: 4rem;
 }
 
-.navbar-brand{
-    font-size: 1rem;
-    font-variation-settings: 'wght' 900;
-    line-height: 0.9em;
-    letter-spacing: -0.045em;
-    color: $color-3;
+// Nav 
+.navbar{
+    background-color: $color-5;
+    z-index: 100;
 }
 
 .navbar-nav{
-    display: flex;
-    flex-direction: row;
+    text-align: center;
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+.navbar-toggler-icon{
+    background-image: url(../img/menu.svg);
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
 }
 
 .nav-link{
-    padding: 8px 8px 8px 0px;
-    color: $color-1;
+    color: $color-4;
     font-size: 0.9rem;
 }
 
 .nav-link:hover{
-    color: $color-1;
+    color: $color-4;
 }
+
 
 // Home
 .home{
-    margin-top: 110px;
-    padding-bottom: 50px;
+    padding-top: 140px;
+    padding-bottom: 60px;
+    background-color: $color-5;
 }
 
 h1{
     font-variation-settings: 'wght' 900;
     line-height: 1.1em;
     letter-spacing: -0.045em;
-    color: $color-1;
+    color: $color-4;
+
+    span{
+        color: $color-3;
+    }
 } 
 
 .home-info{
     text-align: center;
+
+    p{
+        color: $color-4;
+    }
 }
 
 .links{
@@ -90,13 +105,13 @@ h1{
 
     a{
         color: $color-3;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         padding: 0.5rem 1rem;
     }
 }
 
 .cv{
-    color: $color-1;
+    color: $color-3;
     text-decoration: none;
     border-bottom: 2.5px solid $color-3;
     padding: 0.4rem 1rem;
@@ -123,7 +138,7 @@ h1{
 // About
 .about{
     text-align: center;
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
 .container-2{
@@ -133,7 +148,12 @@ h1{
 // Projects
 .projects{
     text-align: center;
-    padding: 50px 0;
+    padding: 100px 0;
+    background-color: $color-3;
+
+    h2, p{
+        color: $color-4;
+    }
 }
 
 .projects-cards{
@@ -142,6 +162,7 @@ h1{
 
 .card{
     border: none;
+    background-color: transparent;
 
     img{
         border-radius: 5px; 
@@ -152,18 +173,71 @@ h1{
     a{
         @extend .cv;
         margin-right: 1rem;
+        color: $color-4;
+        border-bottom: 2.5px solid $color-5;
+    }
+
+    a:hover{
+        color: $color-3;
+        background-color: $color-5;
+        transition: 0.2s ease-out;
+        border-radius: 3px;
     }
 }
 
 // Contact 
 .contact{
-    padding: 50px 0;
+    padding: 100px 0;
     text-align: center;
 }
 
+.form-control{
+    border: none;
+    border-bottom: $color-5 solid 2px;
+    border-radius: 0;
+}
+
+.form-control::placeholder{
+    color: $color-5;
+    font-weight: 600;
+}
+
+.form-control:focus{
+    box-shadow: none;
+    border-bottom: $color-5 solid 2px;
+}
+
+#button{
+    background-color: transparent;
+    border: none;
+    color: $color-3;
+    text-decoration: none;
+    border-bottom: 2.5px solid $color-3;
+    padding: 0.4rem 1rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+#button:hover{
+    color: $color-4;
+    background-color: $color-3;
+    transition: 0.2s ease-out;
+    border-radius: 3px;
+}
+
+// Footer 
 .footer{
+    background-color: $color-5;
     padding: 50px 0;
     text-align: center;
+
+    .links{
+        margin-bottom: 2rem;
+    }
+
+    p{
+        color: $color-3;
+    }
 }
 
 // MediaQueries 
@@ -178,7 +252,7 @@ h1{
     }
 
     .links{
-        margin-bottom: 3rem;
+        margin-bottom: 6rem;
 
         a{
             padding-left: 0;
@@ -189,5 +263,13 @@ h1{
     .container-2{
         width: 60%;
         margin: auto;
+    }
+
+    // Contact 
+    .contact{
+        form{
+            width: 60%;
+            margin: auto;
+        }
     }
 }
