@@ -4,11 +4,15 @@
 // Variables 
 $color-1: #000;
 $color-2: #252525;
-$color-5: #aebc3d;
-$color-4: #ffff;
 $color-3: #510e06;
+$color-4: #ffff;
+$color-5: #aebc3d;
 
 // Normalize 
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -64,21 +68,44 @@ p{
     box-shadow: none;
 }
 
+.navbar-brand:hover{
+    transition: 0.4s ease-in;
+    transform: rotateZ(11deg);
+}
+
 .nav-link{
     color: $color-4;
     font-size: 0.9rem;
+    display: inline-block;
+    position: relative;
+    font-weight: 600;
+    margin: 0 5px;
+}
+
+.nav-link::after{
+    content: '';
+    position: absolute;
+    background-color: $color-3;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: 2px;
+    transition: 0.2s;
+}
+
+.nav-link:hover::after{
+    width: 100%;
 }
 
 .nav-link:hover{
-    color: $color-4;
+    color: $color-3;
 }
-
 
 // Home
 .home{
     padding-top: 140px;
     padding-bottom: 60px;
-    background-color: $color-5;
+    background-color: $color-5; 
 }
 
 h1{
@@ -86,6 +113,7 @@ h1{
     line-height: 1.1em;
     letter-spacing: -0.045em;
     color: $color-4;
+
 
     span{
         color: $color-3;
@@ -129,10 +157,21 @@ h1{
 .container-image-main{
     margin-top: 4rem;
     display: flex;
-    justify-content: center;
     align-items: center;
-    border-radius: 5px;
+    justify-content: center;
+	border-radius: 30% 50% 20% 40%;
     overflow: hidden;
+  	animation: transform 20s ease-in-out infinite both alternate;
+}
+
+@keyframes transform
+{
+    0%,
+  100% { border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%; } 
+   20% { border-radius: 37% 63% 51% 49% / 37% 65% 35% 63%; } 
+   40% { border-radius: 36% 64% 64% 36% / 64% 48% 52% 36%; } 
+   60% { border-radius: 37% 63% 51% 49% / 30% 30% 70% 70%; } 
+   80% { border-radius: 40% 60% 42% 58% / 41% 51% 49% 59%; } 
 }
 
 // About
@@ -143,6 +182,21 @@ h1{
 
 .container-2{
     margin-top: 4rem;
+}
+
+.h3-skills{
+    @extend h2;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+}
+
+.skills{
+    i{
+        font-size: 2rem;
+        color: $color-3;
+        margin-top: 1rem;
+        padding: 0.5rem;
+    }
 }
 
 // Projects
@@ -260,9 +314,20 @@ h1{
     }
 
     // About 
+    .container-3{
+        width: 75%;
+        margin: auto;
+    }
+
     .container-2{
         width: 60%;
         margin: auto;
+    }
+
+    .skills{
+        i{
+            font-size: 2.5rem;
+        }
     }
 
     // Contact 

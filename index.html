@@ -10,8 +10,8 @@
     <!-- CSS Bootstrap. -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <!-- Icons Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <!-- CSS  -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -28,10 +28,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link" href="#">Inicio</a>
-                    <a class="nav-link" href="#nosotros">Nosotros</a>
-                    <a class="nav-link" href="menu.html">Menú</a>
-                    <a class="nav-link" href="#contacto">Contacto</a>
+                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#projects">Projects</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </div>
             </div>
         </div>
@@ -42,14 +42,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-8 home-info">
-                    <h1>Hi, I´m Juan Cruz Cagnoni <br> <span>Frontend Developer</span></h1>
+                    <h1>Hi, I´m Juan Cruz Cagnoni <br> <span>Frontend Developer.</span></h1>
                     <p>I’m from Buenos Aires, Argentina and I work from my studio to the world solving problems.</p>
                     <div class="links">
-                        <a href="https://www.linkedin.com/in/juancruzcagnoni/" target="_blank"><i
-                                class="bi bi-linkedin"></i></a>
-                        <a href="https://github.com/juancruzcagnoni" target="_blank"><i class="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/in/juancruzcagnoni/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/juancruzcagnoni" target="_blank"><i class="fa-brands fa-square-github"></i></a>
                     </div>
-                    <a href="img/cv.pdf" target="_blank" class="cv"><i class="bi bi-paperclip"></i>Download CV</a>
+                    <a href="img/cv.pdf" target="_blank" class="cv"><i class="fa-solid fa-paperclip me-1"></i>Download CV</a>
                 </div>
                 <div class="col-12 col-md-4">
                     <div class="container-image-main">
@@ -61,10 +60,10 @@
     </section>
 
     <!-- About  -->
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <h2>Learn more about me and my habilities</h2>
-            <p class="p-info">I am passionate about everything that has to do with Digital Design and Development. I
+            <p class="mb-5 container-3">I am passionate about everything that has to do with Digital Design and Development. I
                 enjoy working with
                 enthusiastic people who want to solve problems through beautiful design and experiences.</p>
             <div class="row container-2">
@@ -79,11 +78,20 @@
                         distinctive.</p>
                 </div>
             </div>
+            <h3 class="h3-skills">My skills</h3>
+            <div class="skills">
+                <i class="fa-brands fa-square-js"></i>
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-sass"></i>
+                <i class="fa-brands fa-bootstrap"></i>
+                <i class="fa-brands fa-figma"></i>
+            </div>
         </div>
     </section>
 
     <!-- Projects  -->
-    <section class="projects">
+    <section class="projects" id="projects">
         <div class="container">
             <h2>My latest work</h2>
             <p class="p-info">The best way for you to understand my work is to take a look at it, here I leave you the
@@ -95,39 +103,35 @@
                     <h3>Project Name</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto asperiores recusandae et dolore
                         libero impedit itaque placeat officiis doloremque labore!</p>
-                    <div class="card-links"><a href=""><i class="bi bi-check-lg me-1"></i>Demo</a><a href=""><i
-                                class="bi bi-code me-1"></i>Code</a></div>
+                    <div class="card-links"><a href=""><i class="fa-solid fa-check me-1"></i>Demo</a><a href=""><i class="fa-solid fa-code me-1"></i>Code</a></div>
                 </div>
                 <div class="card col-12 col-md-6 mb-5">
                     <img src="img/project.jpg" class="mb-2 img-fluid" alt="">
                     <h3>Project Name</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto asperiores recusandae et dolore
                         libero impedit itaque placeat officiis doloremque labore!</p>
-                    <div class="card-links"><a href=""><i class="bi bi-check-lg me-1"></i>Demo</a><a href=""><i
-                                class="bi bi-code me-1"></i>Code</a></div>
+                    <div class="card-links"><a href=""><i class="fa-solid fa-check me-1"></i>Demo</a><a href=""><i class="fa-solid fa-code me-1"></i>Code</a></div>
                 </div>
                 <div class="card col-12 col-md-6 mb-5">
                     <img src="img/project.jpg" class="mb-2 img-fluid" alt="">
                     <h3>Project Name</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto asperiores recusandae et dolore
                         libero impedit itaque placeat officiis doloremque labore!</p>
-                    <div class="card-links"><a href=""><i class="bi bi-check-lg me-1"></i>Demo</a><a href=""><i
-                                class="bi bi-code me-1"></i>Code</a></div>
+                    <div class="card-links"><a href=""><i class="fa-solid fa-check me-1"></i>Demo</a><a href=""><i class="fa-solid fa-code me-1"></i>Code</a></div>
                 </div>
                 <div class="card col-12 col-md-6 mb-5">
                     <img src="img/project.jpg" class="mb-2 img-fluid" alt="">
                     <h3>Project Name</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto asperiores recusandae et dolore
                         libero impedit itaque placeat officiis doloremque labore!</p>
-                    <div class="card-links"><a href=""><i class="bi bi-check-lg me-1"></i>Demo</a><a href=""><i
-                                class="bi bi-code me-1"></i>Code</a></div>
+                    <div class="card-links"><a href=""><i class="fa-solid fa-check me-1"></i>Demo</a><a href=""><i class="fa-solid fa-code me-1"></i>Code</a></div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact  -->
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="container">
             <h2>Contact me!</h2>
             <p class="p-info">Do you have a project in mind? Contact me to help you conclude that idea and solve your
@@ -157,8 +161,8 @@
     <!-- Footer  -->
     <div class="footer">
         <div class="links">
-            <a href="https://www.linkedin.com/in/juancruzcagnoni/" target="_blank"><i class="bi bi-linkedin"></i></a>
-            <a href="https://github.com/juancruzcagnoni" target="_blank"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/juancruzcagnoni/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/juancruzcagnoni" target="_blank"><i class="fa-brands fa-square-github"></i></a>
         </div>
         <p>All rigths reserved Juan Cruz Cagnoni ©</p>
     </div>
